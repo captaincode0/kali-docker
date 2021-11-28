@@ -1,0 +1,7 @@
+FROM kalilinux/kali:latest
+
+WORKDIR /pentest
+
+COPY ./pentest .
+
+RUN apt update && apt -y install kali-linux-large
