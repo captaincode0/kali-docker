@@ -4,4 +4,4 @@ WORKDIR /pentest
 
 COPY ./pentest .
 
-RUN apt update && apt -y install kali-linux-large
+RUN apt update && apt install -yqq kali-linux-large
